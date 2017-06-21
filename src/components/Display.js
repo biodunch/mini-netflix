@@ -3,8 +3,8 @@ import { Link } from 'react-router';
 import Nav from './Nav';
 import { isLoggedIn } from '../utils/AuthService';
 import { CloudinaryContext, Transformation, Video } from 'cloudinary-react';
-import axios from 'axios';
-import { Share } from 'react-twitter-widgets'
+import axios from 'axios'; //kj
+import { Share } from 'react-twitter-widgets';
 
 class Display extends Component {
 
