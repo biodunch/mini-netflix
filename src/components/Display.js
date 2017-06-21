@@ -4,6 +4,7 @@ import Nav from './Nav';
 import { isLoggedIn } from '../utils/AuthService';
 import { CloudinaryContext, Transformation, Video } from 'cloudinary-react';
 import axios from 'axios';
+import { Share } from 'react-twitter-widgets'
 
 class Display extends Component {
 
@@ -38,6 +39,7 @@ class Display extends Component {
                   <div className="embed-responsive embed-responsive-4by3">
                     <Video publicId={data.public_id} width="300" height="300" controls></Video>
                   </div>
+                  <Share url={`http://res.cloudinary.com/unicodeveloper/video/upload/${data.public_id}.mp4`} />
                   <div> Created at {data.created_at} </div>
 
                 </div>
